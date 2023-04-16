@@ -1,8 +1,52 @@
 @charset "UTF-8";
 
 /* Paleta de Cores 
-
 Verde: #49a09d
 Lílas: #5f2c82
-
+Azul: #483D8B
 */
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #483D8B;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#Login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.451);
+}
+
+section#Login > div#imagem {
+    display: block;
+    background: #483D8B url(../imagem/pexels-trace-hudson-2797752.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+section#Login > div#formulario {
+    display: block;
+    padding: 20px;
+}
